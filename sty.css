@@ -1,0 +1,145 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    height: 100vh;
+    align-items: flex-start;
+  }
+  
+  .cart-container {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .cart-box {
+    margin-top: 20px;
+  }
+  
+  
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    color: #232f3e;
+  }
+  
+  .header p {
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  .cart-table-container {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+  }
+  
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .cart-table th,
+  .cart-table td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  .cart-table th {
+    background-color: #232f3e;
+    color: #fff;
+  }
+  
+  .cart-table td {
+    color: #333;
+  }
+  
+  .quantity-input {
+    width: 50px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .remove-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  .remove-btn:hover {
+    background-color: #e53935;
+  }
+  
+  
+  .cart-summary {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .cart-summary p {
+    font-size: 1.2rem;
+    color: #232f3e;
+  }
+  
+  #total-price {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #e47911;
+  }
+  
+ 
+  .checkout-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #f0c14b;
+    border: 1px solid #a88734;
+    color: #111;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #e2b33a;
+  }
+  
+ 
+  @media screen and (max-width: 768px) {
+    .cart-table th,
+    .cart-table td {
+      font-size: 0.9rem;
+      padding: 0.8rem;
+    }
+  
+    .checkout-btn {
+      font-size: 0.9rem;
+      padding: 0.8rem 1.5rem;
+    }
+  }
+  

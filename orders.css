@@ -1,0 +1,126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    height: 100vh;
+    align-items: flex-start;
+  }
+  
+  .orders-container {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .orders-box {
+    margin-top: 20px;
+  }
+  
+
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    color: #232f3e;
+  }
+  
+  .header p {
+    color: #555;
+    font-size: 1rem;
+  }
+  
+
+  .orders-table-container {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+  }
+  
+  
+  .orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+  }
+  
+  .orders-table th,
+  .orders-table td {
+    padding: 1.2rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  .orders-table th {
+    background-color: #232f3e;
+    color: #fff;
+  }
+  
+  .orders-table td {
+    color: #333;
+  }
+  
+  .status-delivered {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .status-shipped {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .status-cancelled {
+    color: red;
+    font-weight: bold;
+  }
+  
+  
+  .cta {
+    text-align: center;
+  }
+  
+  .cta .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #f0c14b;
+    border: 1px solid #a88734;
+    color: #111;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta .btn:hover {
+    background-color: #e2b33a;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .orders-table th,
+    .orders-table td {
+      font-size: 0.9rem;
+      padding: 0.8rem;
+    }
+    .cta .btn {
+      font-size: 0.9rem;
+      padding: 0.8rem 1.5rem;
+    }
+  }
+  
